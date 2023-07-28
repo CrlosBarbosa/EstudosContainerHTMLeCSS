@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.7fr 1.1fr 1.1fr 1.1fr;
+    grid-template-rows: 0.5fr 2fr 1.2fr 0.3fr;
+    grid-template-areas: "nav nav nav nav"
+                         "sidebar main main main"
+                         "sidebar conteudo1 conteudo2 conteudo3"
+                         "sidebar footer footer footer";      
+
+    grid-gap: 0.5em;
+}
+
+#nav, #main, #sidebar, #conteudo1, #conteudo2, #conteudo3, #footer{
+    padding: 10px;
+    text-align: center;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3px;
+    background-color: pink;
+    grid-area: nav;
+    border-radius: 0.8em;
+}
+
+a{
+    text-decoration: none;
+}
+    
+#menu a{
+    padding:20px;
+    color: black;
+}
+
+#main{
+    background-color: antiquewhite;
+    grid-area: main;
+    border-radius: 0.8em;
+}
+
+#sidebar{
+    background-color: aquamarine;
+    grid-area: sidebar;
+    border-radius: 0.8em;
+}
+
+#conteudo1{
+    background-color: blue;
+    grid-area: conteudo1;
+    border-radius: 0.8em;
+}
+#conteudo2{
+    background-color: blueviolet;
+    grid-area: conteudo2;
+    border-radius: 0.8em;
+}
+#conteudo3{
+    background-color: brown;
+    grid-area: conteudo3;
+    border-radius: 0.8em;
+}
+
+#footer{
+    background-color: burlywood;
+    grid-area: footer;
+    border-radius: 0.8em;
+}
+
+#footer a{
+    text-decoration: none;
+    background-color: white;
+}
+#footer a:hover{
+    background-color: red;
+}
+
+
+    
